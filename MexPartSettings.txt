@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <localRepository>C:\Users\U735040\.m2\cloud-repository</localRepository>
+    <pluginGroups>
+        <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
+    </pluginGroups>
+    <profiles>
+        <profile>
+            <repositories>
+                <repository>
+                  <id>Artifact-release</id>
+                  <name>Artifact Release</name>
+                  <url>http://devops-tools.mx.bsab/artifactory/libs-release-local/</url>
+                </repository>
+                <repository>
+                  <id>all-nexus-dependencies</id>
+                  <name>all-dependencies</name>
+                  <url>http://devops-tools.mx.bsab/artifactory/all-nexus-dependencies/</url>
+                </repository>
+                <repository>
+                  <id>Maven-Dependencies</id>
+                  <name>Maven-Dependencies</name>
+                  <url>http://devops-tools.mx.bsab/artifactory/Maven-dependencies/</url>
+                </repository>
+            </repositories>
+            <id>artifactory</id>
+        </profile>
+        <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <!-- Optional URL to server. Default value is http://localhost:9000 -->
+                <!-- <sonar.host.url>
+                  http://myserver:9000
+                </sonar.host.url> -->
+            </properties>
+        </profile>
+    </profiles>
+    <activeProfiles>
+        <activeProfile>artifactory</activeProfile>
+    </activeProfiles>
+</settings><?xml version="1.0" encoding="UTF-8"?>
+<settings xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <localRepository>C:\Users\U735040\.m2\cloud-repository</localRepository>
+    <pluginGroups>
+        <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
+    </pluginGroups>
+    <profiles>
+        <profile>
+            <repositories>
+                <repository>
+                  <id>Artifact-release</id>
+                  <name>Artifact Release</name>
+                  <url>http://devops-tools.mx.bsab/artifactory/libs-release-local/</url>
+                </repository>
+                <repository>
+                  <id>all-nexus-dependencies</id>
+                  <name>all-dependencies</name>
+                  <url>http://devops-tools.mx.bsab/artifactory/all-nexus-dependencies/</url>
+                </repository>
+                <repository>
+                  <id>Maven-Dependencies</id>
+                  <name>Maven-Dependencies</name>
+                  <url>http://devops-tools.mx.bsab/artifactory/Maven-dependencies/</url>
+                </repository>
+            </repositories>
+            <id>artifactory</id>
+        </profile>
+        <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <!-- Optional URL to server. Default value is http://localhost:9000 -->
+                <!-- <sonar.host.url>
+                  http://myserver:9000
+                </sonar.host.url> -->
+            </properties>
+        </profile>
+    </profiles>
+    <activeProfiles>
+        <activeProfile>artifactory</activeProfile>
+    </activeProfiles>
+</settings>
